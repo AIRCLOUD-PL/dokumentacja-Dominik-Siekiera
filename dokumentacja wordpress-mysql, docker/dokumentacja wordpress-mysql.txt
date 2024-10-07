@@ -1,0 +1,16 @@
+WORDPRESS
+wget https://wordpress.org/wordpress-6.6.2.tar.gz
+tar -xvf 
+systemctl restart apache2
+nano /etc/apache2/sites-available   - usunac html ze ścieżek
+systemctl restart apache2 
+wejsc na przegladarce ip hosta
+potem to co na stronie.
+po zrobieniu pliku wp-config.php i wklejeniu ze strony 
+systemctl restart apache2
+---------------------------------
+MYSQL
+mysql -u root -p
+CREATE USER 'debian1'@'%' iwgetdentified by 'Test123!';
+GRANT ALL PRIVILEGES ON *.* TO 'debain1'@'%';
+FLUSH PRIVILEGES;
